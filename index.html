@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Браузерные события</title>
+</head>
+<body>
+<style>
+#div{
+    width: 900px;
+    height: 400px;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#non{
+    width: 400px;
+    height: 300px;
+    border: 3px solid;
+}
+#btn{
+   width: 150px;
+   height: 150px;
+   border: 3px solid;
+   border-radius: 70px;
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: rgb(0, 110, 255);
+   background-color: bisque;
+   transform: rotate(360deg);
+   transition: 2s;
+
+}
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    transform: rotate(360deg);
+    transition: 1s;
+    background-color: aquamarine;
+ 
+}
+</style>
+<div class="block">
+<h1>Жардамчылар:</h1>
+<ol>
+    <li>Кнопканы бас</li>
+    <li>Чычканды(мышка) элементтен чыгар</li>
+
+</ol>
+</div>
+    <div id="div" onmouseout="out()">
+<button onclick="bot()" id="btn" >Мени бас</button>
+
+</div>
+</div>
+<script>
+    let bot = () =>{
+        alert('Hello')
+    }
+    
+    let out = () =>{
+        let bbb = document.getElementById('div')
+        bbb.style.backgroundColor = "red";
+    }
+let aa = ()=>{
+    let left1 = document.getElementById('non')
+    left1.style.bacgroundColor ='green'
+}
+
+   
+</script>
+   
+</body>
+</html>
